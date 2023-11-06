@@ -1,0 +1,12 @@
+{
+  "name": "haxe-shade",
+  "url": "https://github.com/EliteMasterEric/haxe-shade",
+  "license": "MIT",
+  "tags": ["haxe", "utility", "macro"],
+  "classPath": "src",
+  "description": "A utility to relocate packages.",
+  "contributors": ["MasterEric"],
+  "releasenote": "Initial release.",
+  "version": "0.1.0",
+  "dependencies": {}
+}
