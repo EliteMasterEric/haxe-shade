@@ -4,10 +4,9 @@
 # Class path
 --class-path src/
 
-# Shade the "haxe" package
+# Shade the core haxe code.
 --library haxe-shade
---macro haxe.shade.Shade.apply("haxe", "foo.bar.haxe")
---macro haxe.shade.Shade.apply("jvm", "foo.bar.jvm")
+--macro haxe.shade.Shade.applyCore("foo.bar")
 
 # Main class...
 --main Main

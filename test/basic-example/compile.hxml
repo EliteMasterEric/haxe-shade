@@ -6,7 +6,7 @@
 
 # Shade a package.
 --library haxe-shade
---macro haxe.shade.Shade.apply("test", "foo.bar")
+--macro haxe.shade.Shade.applyPackage("test", "foo.bar")
 
 # Main class...
 --main Main
