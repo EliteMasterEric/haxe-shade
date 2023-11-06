@@ -1,0 +1,16 @@
+# Compile target
+--jvm bin/java/Main.jar
+
+# Class path
+--class-path src/
+
+# Shade the "haxe" package
+--library haxe-shade
+--macro haxe.shade.Shade.apply("haxe", "foo.bar.haxe")
+--macro haxe.shade.Shade.apply("jvm", "foo.bar.jvm")
+
+# Main class...
+--main Main
+# ...or exclude it.
+# -D no-root
+Main
