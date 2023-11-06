@@ -13,7 +13,9 @@ Initial version.
 
 ### Added
 - Added initial functionality.
-    - `haxe.shade.Shade.apply(from, to)` to Shade one package to another.
+    - `haxe.shade.Shade.applyPackage(from, to)` to shade one entire package (and all its subpackages) to another.
+    - `haxe.shade.Shade.applyPackage(from, to)` to shade one module to a new name and/or package.
+    - `haxe.shade.Shade.applyCore(to)` to shade all core Haxe modules (such as `haxe.root`) to a new root package.
 - Added two test projects.
     - The `basic-example` test project is a basic example of shading a package.
     - The `haxe` test project is an example of shading the core Haxe package.
