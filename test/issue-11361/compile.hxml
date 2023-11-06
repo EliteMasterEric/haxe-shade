@@ -1,0 +1,15 @@
+# Compile target
+--jvm bin/java/Main.jar
+
+# Class path
+--class-path src/
+
+# Shade the core haxe code.
+--library haxe-shade
+--macro haxe.shade.Shade.applyModule("Array", "foo.bar.haxe.Array")
+
+# Main class...
+--main Main
+# ...or exclude it.
+# -D no-root
+Main
